@@ -17,7 +17,7 @@ class BookmarkedPdfWriter(PdfWriter):
         try:
             page = self.pagearray[pageNum]
         except IndexError:
-            PdfOutputError("Invalid page number: %i" % (pageNum, ))
+            raise PdfOutputError("Invalid page number: %i" % (pageNum, ))
 
         parent = parent or self._outline
         if parent is None:
