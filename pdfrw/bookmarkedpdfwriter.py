@@ -17,8 +17,7 @@ class BookmarkedPdfWriter(PdfWriter):
         try:
             page = self.pagearray[pageNum]
         except IndexError:
-            # TODO: Improve error handling ?
-            PdfOutputError("Invalid page number: " % (pageNum))
+            PdfOutputError("Invalid page number: %i" % (pageNum, ))
 
         parent = parent or self._outline
         if parent is None:
@@ -51,7 +50,6 @@ class BookmarkedPdfWriter(PdfWriter):
             parent.Count += 1
 
         return bookmark
-
 
     def write(self, fname, trailer=None, user_fmt=user_fmt,
               disable_gc=True):
