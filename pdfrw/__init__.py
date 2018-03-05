@@ -5,7 +5,7 @@
 from .pdfwriter import PdfWriter
 from .pdfreader import PdfReader
 from .objects import (PdfObject, PdfName, PdfArray,
-                      PdfDict, IndirectPdfDict, PdfString)
+                      PdfDict, IndirectPdfDict, PdfString, PdfBool)
 from .tokens import PdfTokens
 from .errors import PdfParseError
 from .pagemerge import PageMerge
@@ -19,5 +19,5 @@ PdfFileWriter = PdfWriter
 
 __all__ = """PdfWriter PdfReader PdfObject PdfName PdfArray
              PdfTokens PdfParseError PdfDict IndirectPdfDict
-             PdfString PageMerge""".split()
+             PdfString PdfBool PageMerge""".split()
 
