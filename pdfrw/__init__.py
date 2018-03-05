@@ -6,7 +6,7 @@ from .pdfwriter import PdfWriter
 from .pdfreader import PdfReader
 from .bookmarkedpdfwriter import BookmarkedPdfWriter
 from .objects import (PdfObject, PdfName, PdfArray,
-                      PdfDict, IndirectPdfDict, PdfString)
+                      PdfDict, IndirectPdfDict, PdfString, PdfBool)
 from .tokens import PdfTokens
 from .errors import PdfParseError
 from .pagemerge import PageMerge
@@ -20,5 +20,5 @@ PdfFileWriter = PdfWriter
 
 __all__ = """PdfWriter PdfReader PdfObject PdfName PdfArray
              PdfTokens PdfParseError PdfDict IndirectPdfDict
-             PdfString PageMerge BookmarkedPdfWriter""".split()
+             PdfString PdfBool PageMerge BookmarkedPdfWriter""".split()
 

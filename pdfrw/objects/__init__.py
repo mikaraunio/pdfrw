@@ -14,6 +14,7 @@ from .pdfarray import PdfArray
 from .pdfobject import PdfObject
 from .pdfstring import PdfString
 from .pdfindirect import PdfIndirect
+from .pdfbool import PdfBool
 
 __all__ = """PdfName PdfDict IndirectPdfDict PdfArray
-             PdfObject PdfString PdfIndirect""".split()
+             PdfObject PdfString PdfIndirect PdfBool""".split()
